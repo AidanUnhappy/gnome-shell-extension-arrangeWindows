@@ -13,25 +13,25 @@
       </description>
     </key>
     <key name="arrangewindow-cascade" type="as">
-      <default><![CDATA[['<Control><Alt>1']]]></default>
+      <default><![CDATA[['<Alt>c']]]></default>
       <summary>Key to cascade</summary>
       <description>
       </description>
     </key>
     <key name="arrangewindow-tile" type="as">
-      <default><![CDATA[['<Control><Alt>2']]]></default>
+      <default><![CDATA[['']]]></default>
       <summary>Key to tile</summary>
       <description>
       </description>
     </key>
     <key name="arrangewindow-sidebyside" type="as">
-      <default><![CDATA[['<Control><Alt>3']]]></default>
+      <default><![CDATA[['<Alt>h']]]></default>
       <summary>Key to side by side</summary>
       <description>
       </description>
     </key>
     <key name="arrangewindow-stack" type="as">
-      <default><![CDATA[['<Control><Alt>4']]]></default>
+      <default><![CDATA[['<Alt>v']]]></default>
       <summary>Key to stack</summary>
       <description>
       </description>
