@@ -22,3 +22,7 @@ https://extensions.gnome.org/extension/1604/arrange-windows/
 
 ![record-screen](/arrange-windows.gif)
 ![cascade](/cascade.png)
+
+# Aidan
+
+Compile .xml file: `glib-compile-schemas schemas`
