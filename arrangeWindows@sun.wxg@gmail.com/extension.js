@@ -31,6 +31,7 @@ const HOTKEY_CASCADE = 'arrangewindow-cascade';
 const HOTKEY_TILE = 'arrangewindow-tile';
 const HOTKEY_SIDEBYSIDE = 'arrangewindow-sidebyside';
 const HOTKEY_STACK = 'arrangewindow-stack';
+const HOTKEY_MAXIMIZE = 'arrangewindow-maximize';
 
 const COLUMN = ['2', '3', '4', '5', '6', '7', '8'];
 
@@ -414,6 +415,11 @@ function addKeybinding() {
                           Meta.KeyBindingFlags.NONE,
                           modeType,
                           arrange.stackWindow.bind(arrange));
+    Main.wm.addKeybinding(HOTKEY_MAXIMIZE,
+                          arrange._gsettings,
+                          Meta.KeyBindingFlags.NONE,
+                          modeType,
+                          arrange.maximizeWindow.bind(arrange, Meta.MaximizeFlags.BOTH));
 }
 
 function removeKeybinding(){
@@ -421,6 +427,7 @@ function removeKeybinding(){
     Main.wm.removeKeybinding(HOTKEY_TILE);
     Main.wm.removeKeybinding(HOTKEY_SIDEBYSIDE);
     Main.wm.removeKeybinding(HOTKEY_STACK);
+    Main.wm.removeKeybinding(HOTKEY_MAXIMIZE);
 }
 
 let arrange;
